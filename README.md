@@ -1,2 +1,3 @@
 # myPokemons
- first project
+
+    Repositório para criar uma lista favorita de Pokémons!
