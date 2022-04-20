@@ -73,6 +73,15 @@ h1:hover {
     flex-direction: column;
 }
 
+.container li {
+    background-color: rgba(236, 26, 26, 0.597);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    transition: 0.5s;
+    opacity: 7;
+}
+
 form input {
     border: none;
     padding: 0.5rem 2rem 0.5rem 2rem;
