@@ -66,7 +66,7 @@ include_once("./templates/header.php");
                     <input type="password" name="password" id="password" placeholder="Sua senha...">
                 </div>
                 <button name="entrar">Logar</button>
-                <p class="mb-3 mt-3 text-muted">Não tem uma conta? <a href="create.php">Crie uma aqui!</a></p>
+                <p class="mb-3 mt-3 text-muted">Não tem uma conta? <a href="register.php">Crie uma aqui!</a></p>
             </form>
         </div>
     </main>

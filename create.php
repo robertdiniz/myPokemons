@@ -1,18 +1,16 @@
 <?php
-include_once("./templates/header.php");
-?>
-<div id="black-screen">
-    <main class="login-div">
-        <div class="container">
-            <span class="glyphicon glyphicon-user"></span>
-            <a href="index.php" class="logo"><img src="./img/pokeball.svg" alt="Logo pokeball"></a>
-            <h1>myPokemons</h1>
-            <form action="/pokedex.php" method="get" class="form-login">
+// CONEXÃO COM BD
+require_once 'verify.php';
 
-            </form>
-        </div>
-    </main>
-</div>
-<?php
-include_once("./templates/footer.php");
-?>
+if (isset($_POST['cadastrar'])) :
+    $name = mysqli_escape_string($connect, $_POST['name']);
+    $senha = mysqli_escape_string($connect, $_POST['senha']);
+
+    $sql = "INSERT INTO usuario (name, senha) VALUES ('$name', '$senha')";
+
+    if (mysqli_query($connect, $sql)) :
+        header('Location: index.php?sucess');
+    else :
+        header('Location: index.php?erro');
+    endif;
+endif;
