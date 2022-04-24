@@ -40,7 +40,7 @@ mysqli_close($connect);
                 </div>
             </div>
 
-            <a href="logout.php">Sair</a>
+            <a href="logout.php" class="btn btn-danger">Sair</a>
         </div>
     </main>
 </div>

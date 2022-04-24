@@ -16,6 +16,12 @@ h1 {
     opacity: 0.5;
 }
 
+h2 {
+    color: white;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
 h1:hover {
     opacity: 1;
     transition: 0.5s;
@@ -150,7 +156,7 @@ nav ul .pokedex-nav {
 
 .pokedex-container {
     max-width: 50vh;
-    max-height: 50vh;
+    
     width: 500px;
     height: 500px;
     border-radius: 0.5rem;
@@ -158,6 +164,7 @@ nav ul .pokedex-nav {
     background-color: brown;
     box-shadow: 10px 0px 13px -7px #000000 -10px 0px 13px -7px #000000;
     margin-bottom: 50px;
+    margin-right: 10px;
 }
 
 .pokedex-pokemon {
@@ -182,4 +189,9 @@ nav ul .pokedex-nav {
     border: 1px solid blue;
     background-color: white;
     border-radius: 5px;
+}
+
+/* ACCOUNT */
+.bdnova {
+    border: 2px solid black;
 }
